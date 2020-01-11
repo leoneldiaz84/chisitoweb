@@ -25,6 +25,6 @@
 
     function HomeController() {
         var vm = this;
-        vm.name = "Sunshine";
+        vm.name = "COLO";
     }
 })();
