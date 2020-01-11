@@ -29,9 +29,13 @@ public class IndexTest extends StrutsRestTestCase<Index> {
     @Test
     public void testIndex() throws Exception {
         Index index = new Index();
+        
         String result = index.execute();
         assertTrue("Expected a success result!", ActionSupport.SUCCESS.equals(result));
         assertFalse(index.isUseMinifiedResources());
+        
+        index.setUseMinifiedResources(true);
+        assertTrue(index.isUseMinifiedResources());
     }
 }
 
