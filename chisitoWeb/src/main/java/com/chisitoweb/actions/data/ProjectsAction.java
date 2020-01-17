@@ -36,7 +36,7 @@ public class ProjectsAction extends ActionSupport {
     private static final long serialVersionUID = 9037336532369476225L;
     private static final Logger log = LogManager.getLogger(ProjectsAction.class);
 
-    private List<String> projectNames;
+    private static List<String> projectNames;
 
     public String execute() throws Exception {
 
